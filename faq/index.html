@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Stack &amp; Blast</title>
+    <meta name="description" content="Frequently Asked Questions about Stack &amp; Blast. Learn how to play, unlock skins, and more.">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">Stack &amp; Blast</a>
+            <div class="nav-links">
+                <a href="/faq">FAQ</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about Stack &amp; Blast</p>
+        </div>
+
+        <div class="page-content">
+
+            <!-- HOW TO PLAY -->
+            <h2>How to Play</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is Stack &amp; Blast?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Stack &amp; Blast is a puzzle game where you place colored blocks on a grid. When enough same-color blocks are connected in a group, they blast &mdash; and every surrounding block gets pushed outward. The push mechanic creates chain reactions that reshuffle the board with every explosion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I place pieces?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Drag a piece from the tray at the bottom of the screen onto the grid. A green ghost preview shows where the piece will land. If the preview turns red, the placement is invalid (something is already there). Release your finger to place the piece.</p>
+                            <p>You get 3 pieces per tray. Once all 3 are placed, a new tray of 3 pieces appears.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do blasts work?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>When a connected group of same-color blocks reaches the blast threshold, it detonates. "Connected" means the blocks are touching horizontally or vertically (not diagonally).</p>
+                            <p>The blast threshold starts at a set number depending on your grid size and increases as your score grows, making the game progressively harder.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is the push mechanic?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>This is what makes Stack &amp; Blast unique. When a group blasts, all adjacent blocks are pushed away from the center of the explosion. Pushed blocks can collide with other blocks, pushing them further (like dominoes). Blocks pushed off the edge of the grid are removed entirely.</p>
+                            <p>The push can create new same-color groups, triggering cascade chain reactions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do combos and cascades work?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>When a blast pushes blocks into new matching groups, those groups immediately blast too &mdash; this is a cascade. Each cascade level doubles your score multiplier:</p>
+                            <p><strong>Level 1:</strong> 1x &rarr; <strong>Level 2:</strong> 2x &rarr; <strong>Level 3:</strong> 4x &rarr; <strong>Level 4:</strong> 8x &rarr; and so on.</p>
+                            <p>The audio builds with each cascade level too &mdash; from a single ping to a full chord. Chasing big combos is the key to high scores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>When is the game over?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>In <strong>Classic mode</strong>, the game ends when none of the 3 pieces in your tray can be placed anywhere on the grid.</p>
+                            <p>In <strong>Daily Challenge</strong> and <strong>Blast Rush</strong>, the game ends when the timer runs out.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GAME MODES -->
+            <h2>Game Modes</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What are the three game modes?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p><strong>Classic:</strong> Endless mode with no time limit. Play until you run out of valid placements. The blast threshold gradually increases as your score rises.</p>
+                            <p><strong>Daily Challenge:</strong> A 60-second timed challenge that is identical for every player worldwide each day. Same pieces, same order. Come back tomorrow for a new puzzle.</p>
+                            <p><strong>Blast Rush:</strong> Start with 90 seconds. Every blast adds 5 seconds to the clock. Keep blasting to keep playing. Chain reactions are critical to extending your run.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I play the Daily Challenge more than once?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>No. Each Daily Challenge can only be played once per calendar day. After you complete it, the button shows "DAILY COMPLETED" with a checkmark. A new challenge is available every day.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- POWER-UPS & BOMB -->
+            <h2>Power-Ups &amp; Bomb</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What are the power-up types?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>There are 3 types of power-up blocks that spawn on the grid every 8 pieces placed:</p>
+                            <p><strong>Row Blast (&rarr;):</strong> Clears the entire row where the power-up block was located.</p>
+                            <p><strong>Column Blast (&darr;):</strong> Clears the entire column where the power-up block was located.</p>
+                            <p><strong>Color Bomb (&starf;):</strong> Removes all blocks of one randomly-selected color from the entire grid.</p>
+                            <p>Power-ups activate only when they are part of a blast group &mdash; they don't trigger on their own.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is the bomb continue feature?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>When you get a game over, you can watch a short rewarded video ad to use a bomb. The bomb clears a 6&times;6 area centered on wherever you tap on the grid, giving you space to keep playing.</p>
+                            <p>You can use the bomb once per game. After using it, the game resumes if there's a valid placement available.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GRID SIZE & SETTINGS -->
+            <h2>Grid Size &amp; Settings</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What grid sizes are available?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>You can choose from four grid sizes in Settings:</p>
+                            <p><strong>8&times;8</strong> &mdash; Tight and intense. Starting blast threshold: 8 blocks.</p>
+                            <p><strong>9&times;9</strong> &mdash; The default. Starting blast threshold: 10 blocks.</p>
+                            <p><strong>10&times;10</strong> &mdash; More room to build. Starting blast threshold: 12 blocks.</p>
+                            <p><strong>12&times;12</strong> &mdash; Sprawling and strategic. Starting blast threshold: 16 blocks.</p>
+                            <p>The grid size change takes effect on your next new game. Blast thresholds scale automatically with the grid size.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What does Colorblind Mode do?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Colorblind Mode adds a unique shape symbol to each block color so you can distinguish them without relying on color alone:</p>
+                            <p>Coral = &#x25CF; (circle) &bull; Blue = &#x25A0; (square) &bull; Purple = &#x25B2; (triangle) &bull; Green = &#x25C6; (diamond) &bull; Yellow = &#x2605; (star) &bull; Pink = &#x2665; (heart)</p>
+                            <p>Toggle it in Settings under the eye icon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Why do I need an internet connection to play?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>The game requires an internet connection to pre-load the rewarded video ad that powers the bomb continue feature. Without connectivity, the ad system cannot prepare content, so game modes are disabled until a connection is available.</p>
+                            <p>Once a game session starts, gameplay itself runs entirely on your device.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SKINS & UNLOCKS -->
+            <h2>Skins &amp; Unlocks</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I unlock skins?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Skins are unlocked by reaching gameplay milestones. No purchases are required &mdash; everything is earned through play.</p>
+                            <table>
+                                <thead>
+                                    <tr><th>Skin</th><th>How to Unlock</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><strong>Default</strong></td><td>Always unlocked</td></tr>
+                                    <tr><td><strong>Neon</strong></td><td>Play 10 games</td></tr>
+                                    <tr><td><strong>Pastel</strong></td><td>Score 1,000+ in a single game</td></tr>
+                                    <tr><td><strong>Retro</strong></td><td>Trigger 100 total blasts</td></tr>
+                                    <tr><td><strong>Monochrome</strong></td><td>Play 50 games</td></tr>
+                                    <tr><td><strong>Galaxy</strong></td><td>Score 5,000+ AND trigger 500+ blasts</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SCORING -->
+            <h2>Scoring</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How is the score calculated?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p><strong>Placing pieces:</strong> 1 point per cell in the piece.</p>
+                            <p><strong>Blasting groups:</strong> 20 points per cell in the blast group, plus bonus points for larger groups.</p>
+                            <p><strong>Cascade multiplier:</strong> Each cascade level doubles the score. A level-3 cascade means your blast score is multiplied by 4x.</p>
+                            <p><strong>Group size bonuses:</strong> Blasting more cells than the minimum threshold awards 50, 150, or 300 extra points depending on how much you exceed it.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What does the blast threshold increase mean?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>The blast threshold (GOAL number shown on screen) increases by 1 for every 500 points you score. For example, on a 9&times;9 grid, the threshold starts at 10 and can rise up to 14.</p>
+                            <p>This means you need progressively larger groups to trigger blasts as the game continues, creating a natural difficulty curve.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- STATS & DATA -->
+            <h2>Stats &amp; Data</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What stats are tracked?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>The Lifetime Stats screen (accessible via the chart icon on the main menu) tracks:</p>
+                            <ul>
+                                <li>Total games played</li>
+                                <li>Total accumulated score across all games</li>
+                                <li>Total blasts triggered</li>
+                                <li>Total pieces placed</li>
+                                <li>Highest combo multiplier achieved</li>
+                                <li>Highest single-game score</li>
+                            </ul>
+                            <p>High scores per game mode (Classic, Daily Challenge, Blast Rush) are also shown in the stats screen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is my data backed up?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>All game data is stored locally on your device. If you back up your device via iCloud or your computer, your game data will be included in that backup.</p>
+                            <p>If you delete the app, all scores, stats, and preferences are permanently removed. Reinstalling the app starts fresh.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TROUBLESHOOTING -->
+            <h2>Troubleshooting</h2>
+            <div class="faq-section">
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>The bomb ad didn't load. What do I do?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>The rewarded video ad requires a stable internet connection. If it fails to load, check your Wi-Fi or cellular connection and try again. The app will attempt to pre-load new ads between games.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>I changed the grid size but nothing happened.</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>The grid size change takes effect on your <strong>next new game</strong>, not the current one. Start a new game from the main menu to play on the new grid size.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I contact support?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Email us at <a href="mailto:support@stackandblast.com">support@stackandblast.com</a>. Please include your device model, iOS version, and a description of the issue. Screenshots are always helpful.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p>&copy; 2026 Piotr Gebski. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                    <a href="/faq">FAQ</a>
+                    <a href="mailto:support@stackandblast.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(button) {
+            var item = button.parentElement;
+            var wasOpen = item.classList.contains('open');
+
+            // Close all items in the same section
+            var section = item.parentElement;
+            var items = section.querySelectorAll('.faq-item');
+            items.forEach(function(i) { i.classList.remove('open'); });
+
+            // Toggle the clicked item
+            if (!wasOpen) {
+                item.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
